@@ -1,0 +1,219 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Overall Font */
+body {
+    font-family: 'Garamond', serif;
+    background-color:rgb(209, 193, 150); /* Cream background */
+    color: #2a2a2a; /* Dark text for readability */
+}
+
+/* Header (Navigation Bar) */
+header {
+    background-color: #005f73; /* Blue background */
+    padding: 1rem;
+}
+
+.navbar-brand {
+    color: #fdf6e3; /* Cream text */
+    font-size: 1.5rem;
+}
+
+.navbar-nav .nav-link {
+    color: #fdf6e3 !important; /* Cream text for links */
+    font-size: 1.1rem;
+    margin-left: 15px;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color:rgb(237, 233, 106) !important; /* Lighter blue for hover effect */
+}
+
+/* Hero Section */
+.home {
+    text-align: center;
+    padding: 60px 0;
+    background-color: #fdf6e3; /* Cream background */
+}
+
+.home h1, .home h3, .home h2 {
+    color: #005f73; /* Blue text */
+    margin-bottom: 15px;
+}
+
+.home p {
+    color: #2a2a2a; /* Dark text for paragraph */
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+}
+
+/* CSR Representatives Section */
+.csr {
+    background-color: #ffffff; /* White background */
+    padding: 50px 0;
+}
+
+.csr h3 {
+    color: #005f73; /* Blue text */
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.card {
+    border: 1px solid #005f73;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Elevates the card on hover */
+}
+
+.card-body {
+    text-align: center;
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    color: #005f73; /* Blue text for the name */
+    margin: 10px 0;
+}
+
+.card-body button {
+    background-color: #005f73; /* Blue button */
+    color: #fdf6e3; /* Cream text */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.card-body button a {
+    text-decoration: none;
+    color: #fdf6e3;
+}
+
+.card-body button:hover {
+    background-color: #0a74a1; /* Lighter blue for hover effect */
+}
+
+.card img {
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+/* About Section */
+.about {
+    background-color: #fdf6e3; /* Cream background */
+    padding: 40px 0;
+    text-align: center;
+}
+
+.about h3 {
+    color: #005f73; /* Blue text */
+    margin-bottom: 20px;
+}
+
+/* Contact Section */
+#contact {
+    background-color: #ffffff; /* White background */
+    padding: 40px 0;
+    text-align: center;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fdf6e3; /* Cream background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #005f73;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #2a2a2a;
+}
+
+textarea {
+    height: 150px;
+}
+
+button[type="submit"] {
+    background-color: #005f73;
+    color: #fdf6e3;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0a74a1; /* Lighter blue for hover effect */
+}
+
+/* Footer Section */
+footer {
+    background-color: #005f73; /* Blue background */
+    color: #fdf6e3; /* Cream text */
+    padding: 30px 0;
+    text-align: center;
+}
+
+footer .icons a {
+    color: #fdf6e3;
+    font-size: 30px;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+footer .icons a:hover {
+    color: #0a74a1; /* Lighter blue for icon hover effect */
+}
+
+footer p {
+    font-size: 1.1rem;
+    margin-top: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar-nav .nav-link {
+        font-size: 1rem;
+        margin-right: 10px;
+    }
+
+    .home h1 {
+        font-size: 2rem;
+    }
+
+    .home h2 {
+        font-size: 1.5rem;
+    }
+
+    .card-body button {
+        padding: 8px 15px;
+    }
+
+    button[type="submit"] {
+        font-size: 1rem;
+        padding: 8px 15px;
+    }
+}
